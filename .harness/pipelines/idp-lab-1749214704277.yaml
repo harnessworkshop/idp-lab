@@ -1,0 +1,35 @@
+pipeline:
+  identifier: Build_idp_lab_1749214708560
+  name: Build idp-lab
+  orgIdentifier: centrica464org
+  projectIdentifier: jackdacentrica4646
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.idp
+        repoName: idp-lab
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          caching:
+            enabled: true
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
