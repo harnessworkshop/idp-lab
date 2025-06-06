@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_idp_lab_1749214708560-pr-trigger-input-set
+  identifier: Build_idp_lab_1749214708560prtriggerinputset
+  orgIdentifier: centrica464org
+  projectIdentifier: jackdacentrica4646
+  pipeline:
+    identifier: Build_idp_lab_1749214708560
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
