@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_idp_lab_1753363565267-pr-trigger-input-set
+  identifier: Build_idp_lab_1753363565267prtriggerinputset
+  orgIdentifier: temenos519org
+  projectIdentifier: naretemenos5192590
+  pipeline:
+    identifier: Build_idp_lab_1753363565267
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
