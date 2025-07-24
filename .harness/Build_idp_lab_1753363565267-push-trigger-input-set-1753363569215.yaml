@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_idp_lab_1753363565267-push-trigger-input-set
+  identifier: Build_idp_lab_1753363565267pushtriggerinputset
+  orgIdentifier: temenos519org
+  projectIdentifier: naretemenos5192590
+  pipeline:
+    identifier: Build_idp_lab_1753363565267
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
